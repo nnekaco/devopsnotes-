@@ -1,0 +1,21 @@
+#Create Linux User With Non Interactive Shell
+#create a user named mariyam with a non-interactive shell on the App Server2
+
+#At first login to the respective mentioned server in the task. Mine is stapp02
+#First check user is existed on the server  by below command  
+#Validate user is created successfully as per the task request.      
+
+
+ssh steve@stapp02
+
+sudo id mariyam
+
+sudo useradd mariyam -s /sbin/nologin    
+
+id mariyam
+
+su - mariyam
+
+sudo cat /etc/passwd | grep mariyam
+
+
