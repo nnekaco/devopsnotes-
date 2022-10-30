@@ -1,0 +1,35 @@
+#1. Login on   Mail  server as per the task and switch root user
+
+ssh groot@stmail01
+
+sudo su -
+
+#2. Start postfix service , check status with -l for details error output 
+
+systemctl start postfix
+
+systemctl status postfix -l
+
+#3. As we identify the issue in configuration file edit and do the changes
+
+cat /etc/postfix/main.cf |grep inet_interface
+
+vi /etc/postfix/main.cf
+
+cat /etc/postfix/main.cf |grep inet_interface
+
+#inet_interfaces = localhost
+
+#4. Post configuration saved start the services and check the status 
+
+systemctl start postfix
+
+systemctl status postfix
+
+#5. validate the task by telnet the port 25 
+
+telnet stmail01 25
+
+
+
+
