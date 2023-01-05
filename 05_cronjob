@@ -1,0 +1,21 @@
+#ssh tony@stapp01
+
+#sudo su -
+
+#yum install cronie -y
+
+#systemctl start crond.service
+
+#systemctl status crond.service
+
+#crontab -e
+
+#write cronjob text in the vi editor, :wq
+
+#watch -n 5 ll /tmp 
+
+#crontab -u root -l
+
+#crontab -l
+
+#ll /tmp/
