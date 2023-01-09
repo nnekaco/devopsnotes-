@@ -1,0 +1,17 @@
+#ssh tony@stapp01
+
+#sudo su -
+
+#sudo useradd emily
+
+#sudo chage -E 2021-02-17 emily
+
+#sudo chage -l emily
+
+Last password change : Jan 9, 2023
+Password expires : never
+Password inactive : never
+Account expires : Feb 17, 2021
+Minimum number of days between password change : 0
+Maximum number of days between password change : 99999
+Number of days of warning before password expires : 7
