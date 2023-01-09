@@ -1,1 +1,0 @@
-# devopsnotes- My DevOps sample project includes basic Linux functions and sample DevOps mini projects hosted by KodeKloud Engineer, an open source platform that allows users to practice thier cloud skills.
