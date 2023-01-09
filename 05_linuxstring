@@ -1,0 +1,14 @@
+#There is some data on Nautilus App Server 2 in Stratos DC. Data needs to be altered in several of the files. On Nautilus App Server 2, alter the /home/BSD.txt file as per details given below:
+
+a. Delete all lines containing word software and save results in /home/BSD_DELETE.txt file. (Please be aware of case sensitivity)
+b. Replace all occurrence of word from to is and save results in /home/BSD_REPLACE.txt file.
+
+ssh banner@stapp02
+sudo su -
+ll /home
+cat /home/BSD.txt |grep software
+sed '/\<software\>/d' /home/BSD.txt > /home/BSD_DELETE.txt
+cat /home/BSD_DELETE.txt |grep software
+sed 's/\band\b/is/g' /home/BSD.txt > /home/BSD_REPLACE.txt
+cat /home/BSD_REPLACE.txt |grep and
+cat /home/BSD_REPLACE.txt |grep is
