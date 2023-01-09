@@ -1,0 +1,5 @@
+#sudo useradd emily
+
+#sudo chage -E 2023-01-09 emily
+
+#sudo chage -l emily
