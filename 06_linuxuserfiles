@@ -1,0 +1,14 @@
+
+#ssh steve@stapp02
+
+# sudo su -
+
+#ll /home/usersdata/
+
+#ll /beta/
+
+#find /home/usersdata/ -type f -user javed |wc -l
+
+#find /home/usersdata/ -type f -user javed -exec cp --parents {} /beta \;
+
+#ll /beta/home/usersdata/
