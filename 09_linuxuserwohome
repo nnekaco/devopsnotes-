@@ -1,0 +1,17 @@
+
+
+#ssh steve@stapp02
+
+#sudo su -
+
+#id emily
+
+#cat /etc/passwd |grep emily
+
+#useradd -M emily
+
+#id emily
+
+#cat /etc/passwd |grep emily
+
+#ll /home
