@@ -1,0 +1,11 @@
+#whoami
+
+#ssh-keygen -t rsa
+
+#ssh-copy-id  brad@stapp01
+
+#ssh brad@stapp01
+
+#whoami
+
+
