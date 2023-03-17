@@ -1,2 +1,16 @@
+#ssh  banner@stapp03
 
+#sudo su -
+
+#yum -y install selinux*
+
+#sestatus
+
+#cat /etc/selinux/config | grep SELINUX
+
+#vi /etc/selinux/config
+
+#cat /etc/selinux/config | grep SELINUX
+
+#sestatus
 
