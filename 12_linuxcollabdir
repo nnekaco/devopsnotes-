@@ -1,0 +1,13 @@
+#ssh tony@stapp01
+
+#sudo su -
+
+#mkdir -p /sysadmin/data
+
+#ll -lsd /sysadmin/data
+
+#chgrp -R sysadmin /sysadmin/data
+
+#chmod -R 2770 /devops/data
+
+#ll -lsd /sysadmin/data
