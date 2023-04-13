@@ -1,0 +1,26 @@
+
+#One of the Nautilus developers has copied confidential data on the jump host in Stratos DC. That data must be copied to one of the app servers. Because developers do not have access to app servers, they asked the system admins team to accomplish the task for them.
+
+#Copy /tmp/nautilus.txt.gpg file from jump server to App Server 3 at location /home/opt.
+
+#JUMP SERVER
+===========
+
+    1  scp /tmp/nautilus.txt.gpg steve@stapp03:/home/opt/
+    2  ssh steve@stapp03
+    3  scp /tmp/nautilus.txt.gpg steve@stapp03:/home/opt/
+   
+APP SERVER
+==========
+    1  ls -la /home/                           --HERE CHECKED OPT FOLDER OWNER  AND IN NEXT STEP CHANGED TO BANNER AS OWNER 
+    2  sudo chown -R banner:banner /home/
+    3  ls -la /home/
+    4  cd /home/opt/
+    5  ls
+ 
+
+
+NOTE
+====
+IF SCP IS NOT INSTALLING FOLLOW BELOW COMMAND
+    1  sudo yum install -y openssh-clients openssh
